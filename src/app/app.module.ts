@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { GithubService } from './github-services/github.service';
+import { GithubComponent } from './github/github.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    GithubComponent
   ],
   imports: [
     BrowserModule,
