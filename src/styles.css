@@ -1,15 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
-/* github token c32121c71fd35388d734e9b8d21b9983cc2e9ba4  */
+
 @import "~bootstrap/dist/css/bootstrap.css";
 
 .topPadding{
 	padding-top:70px;
 	padding-bottom:30px;
+	border-radius: 5px;
 }
 .searchPadding{
 	padding-top:70px;
+	border-radius: 5px;
 }
 
 body {
-	background-image: linear-gradient(rgba(165, 125, 125, 0.589),rgba(128, 52, 52, 0.705), grey);
+	background-image: linear-gradient(grey white);
+	background-repeat: no-repeat;
+	background-size: cover;
 }

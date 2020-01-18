@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { RoutingModule } from './routing/routing.module';
 import { FormsModule } from '@angular/forms';
 
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpModule } from '@ngx-progressbar/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,7 +29,10 @@ import { DateCountPipe } from './date-count.pipe';
     BrowserModule,
     HttpModule,
     FormsModule,
-    AppRoutingModule
+    RoutingModule,
+    AppRoutingModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpModule
   ],
   providers: [GithubService],
   bootstrap: [AppComponent]
