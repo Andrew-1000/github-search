@@ -13,7 +13,7 @@
 }
 
 body {
-	background-image: linear-gradient(grey white);
+	background-image: linear-gradient(grey, white);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
