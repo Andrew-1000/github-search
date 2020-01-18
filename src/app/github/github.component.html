@@ -1,17 +1,19 @@
 
-<div class="border container searchPadding">
+
+
+<br>
+
+<div class="topPadding container border" *ngIf="user">
+  <div class=" container ">
   <form action="">
     <div class="form-group">
-      <label>Find A Github User</label>
+      <h3>Find A Github User</h3>
       <input type="text" name="uName" class="form-control" placeholder="Type a github user..." [(ngModel)]="uName"
         (keyup)="findProfile()">
     </div>
   </form>
 </div>
-
 <br>
-
-<div class="topPadding container border" *ngIf="user">
   <div class="card">
     <h5 class="card-header">{{user.name}} <small> ({{user.login}})</small></h5>
     <div class="card-body">
