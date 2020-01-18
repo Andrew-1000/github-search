@@ -10,7 +10,7 @@ import { GithubService } from '../github-services/github.service';
 export class GithubComponent implements OnInit {
 
   user:any[];
-  repo: any[];
+  repos: any[];
   uName: string;
 
   constructor(private githubService:GithubService) {
@@ -19,9 +19,9 @@ export class GithubComponent implements OnInit {
       this.user = user;
     });
 
-    this.githubService.getRepo().subscribe(repo => {
+    this.githubService.getRepos().subscribe(repos => {
       
-      this.repo = repo;
+      this.repos = repos;
     })
    }
 
@@ -33,9 +33,9 @@ export class GithubComponent implements OnInit {
        this.user = user;
      });
 
-     this.githubService.getRepo().subscribe(repo => {
+     this.githubService.getRepos().subscribe(repos => {
 
-      this.repo = this.repo
+      this.repos = repos;
       
      })
    }

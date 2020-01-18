@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers} from '@angular/http';
+import { Http} from '@angular/http';
 import { map } from 'rxjs/operators'
 
 
@@ -14,17 +14,16 @@ export class GithubService {
   }
   getUser() {
     return this._http.get('https://api.github.com/users/' + this.uName + '?client_id='
-    + this.clntId + '&client_secret=' +this.clntSecret)
+    + this.clntId + '&client_secret=' + this.clntSecret)
     .pipe(map(res=> res.json()));
   }
 
-  getRepo() {
+  getRepos() {
     return this._http.get('https://api.github.com/users/' + this.uName + '/repos?client_id='
     + this.clntId + '&client_secret=' + this.clntSecret)
     .pipe(map(res => res.json()));
-
-
   }
+  
   updateUser(uName:string){
     this.uName = uName;
   }

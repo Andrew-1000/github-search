@@ -2,7 +2,7 @@
   <form action="">
     <div class="form-group">
       <label>Find Github Users</label>
-      <input type="text" name="uName" class="form-control" placeholder="Find Github" [(ngModel)]="uName"
+      <input type="text" name="uName" class="form-control" placeholder="Type a github user..." [(ngModel)]="uName"
         (keyup)="findProfile()">
     </div>
   </form>
@@ -21,16 +21,11 @@
           <hr>
           <a href="{{user.html_url}}" class="btn btn-outline-success btn block" target="_blank">View Github Profile</a>
         </div>
-        <div class="col-md-2">
-
-        </div>
+        <div class="col-md-2"></div>
         <div class="col-md-6">
           <span class="badge badge-primary">{{user.followers}} Followers</span>
-          <span class="badge badge-primary">{{user.following}} Following</span>
-          <span class="badge badge-primary">{{user.public_gists}} Public Gists</span>
-          <span class="badge badge-primary">{{user.public_repos}} Public Repos</span>
-          <span class="badge badge-primary">{{user.private_repos}} Private Repos</span>
-
+          <span class="badge badge-secondary">{{user.following}} Following</span>
+          <span class="badge badge-infp">{{user.public_repos}} Public Repos</span>
           <hr>
 
           <div class="card">
@@ -39,6 +34,7 @@
               <li class="list-group-item" *ngIf=user.location>Lives in: {{user.location}}</li>
               <li class="list-group-item" *ngIf=user.blog>Blog: {{user.blog}}</li>
               <li class="list-group-item" *ngIf=user.company>Company: {{user.company}}</li>
+              <li class="list-group-item" *ngIf=user.email>Email Address: {{user.email}}</li>
             </ul>
           </div>
         </div>
@@ -47,10 +43,10 @@
 
     <hr>
     <div class="card">
-      <h5 class="card-header">Repositories</h5>
+      <h5 class="card-header">{{user.login}}'s Repositories</h5>
       <div class="card-body col-md-12">
         <div class="card">
-          <ul class="list-group list-group-flush" *ngFor="let repo of repo">
+          <ul class="list-group list-group-flush" *ngFor="let repo of repos">
             <li class="list-group-item">
               <div class="row">
                 <div class="col-md-9">
