@@ -1,6 +1,11 @@
-# GithubSearch
+# Github User Search Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+This project was generated with [Angular CLI) version 8.3.21. Its main objective is to help users search for github users. This is achieved by providing the username of that person on the search  input field provided at the top of the page. Other things that the user can perform with this web ap include:
+1. View the person's repositories
+2. View details like number of followers, number of those he/she followed, number of gists, number of private and public repositories
+3. One can open the repositories details on a new tab when clicked
+4. Open the actual GitHub Account
+5. View number of forks that have been posted
 
 ## Development server
 
