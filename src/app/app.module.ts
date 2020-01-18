@@ -9,13 +9,15 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { GithubService } from './github-services/github.service';
 import { GithubComponent } from './github/github.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     ContactComponent,
-    GithubComponent
+    GithubComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
