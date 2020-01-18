@@ -8,8 +8,8 @@ import { GithubService } from '../github-services/github.service';
   providers:[GithubService]
 })export class GithubComponent implements OnInit {
 
-  user:any[];
-  repos: any[];
+  user:any;
+  repos: any;
   uName: string;
 
   constructor(private githubService:GithubService) {
