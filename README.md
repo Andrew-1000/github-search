@@ -1,5 +1,7 @@
 ## Github User Search Application
 
+## CodeBeat GPA
+[![codebeat badge](https://codebeat.co/badges/4b3261bf-32fe-4033-aaa1-37ced6a285c1)](https://codebeat.co/projects/github-com-andrew-1000-github-search-master)
 
 ## Description
 
